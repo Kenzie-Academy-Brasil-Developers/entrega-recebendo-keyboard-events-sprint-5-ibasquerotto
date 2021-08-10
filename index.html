@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Keyboard Events</title>
+</head>
+<body>
+    <div id ="box">
+        <img src="./assets/img/pato.jpg" alt="">
+    </div>
+    
+    
+    <script>
+        let boxTop = 200;
+        let boxLeft = 200;
+
+        'use strict';
+        
+        // document.addEventListener('keydown', (event) => {
+        //   const keyName = event.key;
+        //   alert('keydown event\n\n' + 'key: ' + keyName);
+          
+        // });
+
+
+        document.addEventListener('keydown', (event) => {
+          let keyName = event.key;
+          if (keyName == "ArrowDown"){
+            document.getElementById("box").style.top = boxTop + 10 + "px";
+          }
+
+          if (keyName == "ArrowUp"){
+            document.getElementById("box").style.top = boxTop - 10 + "px";
+          }
+          
+          if (keyName == "ArrowLeft"){
+            document.getElementById("box").style.left = boxLeft - 10 + "px";
+          }
+
+          if (keyName == "ArrowRight"){
+            document.getElementById("box").style.left = boxLeft + 10 + "px";
+          }
+        });
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#box { 
+    width: 100px; 
+    height: 100px; 
+    position: absolute; 
+    background-image:url("./assets/img/pato.jpg");
+    left: 200px; 
+    top: 200px; 
+}
+
+
+#box img{
+    width: 100px;
+    height: 100px;
+}
